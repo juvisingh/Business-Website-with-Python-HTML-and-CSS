@@ -1,7 +1,48 @@
 .navbar{
+    display:flex;
     background-color: #003638;
-    color: #f2a183;
+    padding:5px;
+    justify-content: space-evenly;
+    font-size: 40px;
+    align-items: center;
+    font-family: myFont;
+    
+}
+.nav {
+    margin-left: 35px;
+}
+.searchbar {
+    background-color: #003638;
+    display:flex;
+    justify-content: center;
+    font-size: 100px;
+    padding-bottom: 10px;
 }
 a {
-    color: #f2a183
+    color: #f2a183 
+}
+.logo {
+    width: 100px;
+    height: 100px;
+}
+@font-face {
+    font-family: myFont;
+    src: url(./LocalBrewerySans.ttf);
+}
+@font-face {
+    font-family: myFont2;
+    src: url(./Zooja.ttf);
+}
+.container {
+    display: grid;
+    grid-template-columns: [first] 1fr [second] 1fr [end];
+}
+.item-1{
+    grid-column: first/second;
+}
+.item-2{
+    grid-column: second/end;
+    display:flex;
+    justify-content: center;
+
 }
