@@ -1,6 +1,10 @@
+@import url(https://db.onlinewebfonts.com/c/0611588f0699473d38dcba9f36e14a6e?family=Zooja+W00+Regular);
+html {
+    background-image: url(./images/pattern.png);
+}
 .navbar{
     display:flex;
-    background-color: #003638;
+    background-image: url(./images/pattern.png);
     padding:5px;
     justify-content: space-evenly;
     font-size: 40px;
@@ -9,7 +13,7 @@
     
 }
 .nav {
-    margin-left: 35px;
+    margin-left: 100px;
 }
 .searchbar {
     background-color: #003638;
@@ -31,18 +35,53 @@ a {
 }
 @font-face {
     font-family: myFont2;
-    src: url(./Zooja.ttf);
+    src: url("https://db.onlinewebfonts.com/t/0611588f0699473d38dcba9f36e14a6e.eot");
+    src: url("https://db.onlinewebfonts.com/t/0611588f0699473d38dcba9f36e14a6e.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0611588f0699473d38dcba9f36e14a6e.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0611588f0699473d38dcba9f36e14a6e.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/0611588f0699473d38dcba9f36e14a6e.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0611588f0699473d38dcba9f36e14a6e.svg#Zooja W00 Regular")format("svg");
 }
 .container {
     display: grid;
-    grid-template-columns: [first] 1fr [second] 1fr [end];
+    padding: 20px;
+    grid-template-columns: [first] 50% [second] 50% [end];
+    grid-template-rows: [f] auto [s] auto [t] auto [end];;
 }
 .item-1{
     grid-column: first/second;
+    grid-row: f/s;
 }
 .item-2{
     grid-column: second/end;
-    display:flex;
-    justify-content: center;
-
+    grid-row: f/s;
+    text-align: center;
+    color: white;
+}
+.item-3{
+    padding-top: 70px;
+    grid-column: first/end;
+    grid-row: s/t;
+    color:white
+}
+#h2 {
+    padding: 15px;
+}
+.footer {
+    display: flex;
+    color:white;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f2a183 
+}
+.aboutus {
+    text-align: center;
+    font-size: 25px;   
+    color:white;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+.h22 {
+    font-size: 18px;
 }
