@@ -2,6 +2,10 @@
 html {
     background-image: url(./images/pattern.png);
 }
+.margin {
+    margin-right: 30px;
+    padding-bottom: 100px;
+}
 .navbar{
     display:flex;
     background-image: url(./images/pattern.png);
@@ -24,6 +28,9 @@ html {
 }
 a {
     color: #f2a183 
+}
+a:hover {
+    color: black;
 }
 .logo {
     width: 100px;
@@ -60,6 +67,7 @@ a {
 }
 .item-3{
     padding-top: 70px;
+    padding-bottom: 70px;
     grid-column: first/end;
     grid-row: s/t;
     color:white
@@ -82,6 +90,83 @@ a {
     padding-right: 100px;
     padding-bottom: 100px;
 }
+.test {
+    font-size: 25px;   
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
 .h22 {
     font-size: 18px;
+    text-align: justify;
+    color: white;
+}
+#h11 {
+    text-align: center;
+}
+#h111 {
+    text-align: center;
+}
+#h222 {
+    text-align: center;
+}
+#h1111 {
+    text-align: center;
+}
+.addTest {
+    color:white;
+}
+.contactus {
+    text-align: center;
+    font-size: 25px;   
+    color:white;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+.FAQ {
+    text-align: justify;
+}
+.gallery {
+    display: grid;
+    padding-left: 100px;
+    padding-right: 100px;
+    grid-template-columns: [uno] 50% [dos] 50% [end];
+    grid-template-rows: [u] auto [d] auto [end];
+    gap: 30px;
+}
+.gallery1 {
+    text-align: center;
+    color:white;
+    font-size: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.img1 {
+    grid-column: uno/dos;
+    grid-row: u/d;
+}
+.img2 {
+    grid-column: dos/end;
+    grid-row: u/d;
+}
+.img3 {
+    grid-column: uno/dos;
+    grid-row: d/end;
+}
+.img4 {
+    grid-column: dos/end;
+    grid-row: d/end;
+}
+@media (max-width: 479px) {
+    img {
+        width: 100%;
+    }
 }
